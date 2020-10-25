@@ -7,3 +7,5 @@ $(document).ready(function () {
     localStorage.setItem(time, text);
   });
 });
+
+//creating localstorage for every hour:
