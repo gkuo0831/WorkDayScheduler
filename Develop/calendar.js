@@ -5,8 +5,8 @@ $(document).ready(function () {
   //creating save button for calendar events
   $(".save").on("click", function () {
     //console.log(content);
-    var text = $(content).siblings(".event").val();
-    var time = $(content).parent().attr("id");
+    var text = $(this).siblings(".event").val();
+    var time = $(this).parent().attr("id");
 
     localStorage.setItem(time, text);
   });
