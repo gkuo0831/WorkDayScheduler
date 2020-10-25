@@ -4,8 +4,21 @@ $(document).ready(function () {
 
   //creating save button for calendar events
   $(".save").on("click", function () {
+    console.log(content);
+    var text = $(content).siblings(".event").val();
+    var time = $(content).parent().attr("id");
+
     localStorage.setItem(time, text);
   });
-});
 
-//creating localstorage for every hour:
+  //creating localstorage for every hour:
+  $("#9Am .event").val(localStorage.getItem("9Am"));
+  $("#10Am .event").val(localStorage.getItem("10Am"));
+  $("#11Am .event").val(localStorage.getItem("11Am"));
+  $("#12Am .event").val(localStorage.getItem("12Am"));
+  $("#1Pm .event").val(localStorage.getItem("1Pm"));
+  $("#2Pm .event").val(localStorage.getItem("2Pm"));
+  $("#3Pm .event").val(localStorage.getItem("3Pm"));
+  $("#4Pm .event").val(localStorage.getItem("4Pm"));
+  $("#5Pm .event").val(localStorage.getItem("5Pm"));
+});
