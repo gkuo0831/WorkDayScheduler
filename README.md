@@ -4,8 +4,8 @@ This assignment was to create a simple calendar application that will allow you 
 
 # Links
 
-Repository: https://github.com/gkuo0831/WorkDayScheduler
-Weblink: https://gkuo0831.github.io/WorkDayScheduler/
+- Repository: https://github.com/gkuo0831/WorkDayScheduler
+- Weblink: https://gkuo0831.github.io/WorkDayScheduler/
 
 # Screenshots
 
