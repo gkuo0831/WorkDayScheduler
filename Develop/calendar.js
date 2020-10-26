@@ -25,5 +25,10 @@ $(document).ready(function () {
   //creating a past/present/future for time
   function tracker() {
     var current = moment().hour();
+
+    $(".block").each(function () {
+      var blockHour = parseInt($(this).attr("id").split("hour")[1]);
+      console.log(blockHour, current);
+    });
   }
 });
