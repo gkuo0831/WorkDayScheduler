@@ -8,3 +8,5 @@ Repository: https://github.com/gkuo0831/WorkDayScheduler
 Weblink:
 
 # Screenshots
+
+![Screen Shot 2020-10-25 at 7 06 10 PM](https://user-images.githubusercontent.com/68671968/97124314-36602000-16f5-11eb-9550-dd9f0ff9193c.png)
