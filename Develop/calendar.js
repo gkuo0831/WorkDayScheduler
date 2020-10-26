@@ -26,22 +26,16 @@ $(document).ready(function () {
   function tracker() {
     var current = moment().hour();
 
-    $(".block").each(function () {
+    $(".row").each(function () {
       var blockHour = parseInt($(this).attr("id").split("hour")[1]);
       console.log(blockHour, current);
 
       //past hours
       if (blockHour < current) {
         $(this).addClass("past");
-        $(this).removeClass("present");
-        $(this).removeClass("future");
       } else if (blockHour === current) {
-        $(this).removeClass("past");
-        $(this).removeClass("future");
         $(this).addClass("present");
       } else {
-        $(this).removeClass("present");
-        $(this).removeClass("past");
         $(this).addClass("future");
       }
     });
