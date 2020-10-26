@@ -35,6 +35,14 @@ $(document).ready(function () {
         $(this).addClass("past");
         $(this).removeClass("present");
         $(this).removeClass("future");
+      } else if (blockHour === current) {
+        $(this).removeClass("past");
+        $(this).removeClass("future");
+        $(this).addClass("present");
+      } else {
+        $(this).removeClass("present");
+        $(this).removeClass("past");
+        $(this).addClass("future");
       }
     });
   }
