@@ -29,6 +29,13 @@ $(document).ready(function () {
     $(".block").each(function () {
       var blockHour = parseInt($(this).attr("id").split("hour")[1]);
       console.log(blockHour, current);
+
+      //past hours
+      if (blockHour < current) {
+        $(this).addClass("past");
+        $(this).removeClass("present");
+        $(this).removeClass("future");
+      }
     });
   }
 });
