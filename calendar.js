@@ -1,4 +1,5 @@
 //Telling the js to run the html and then css:
+
 $(document).ready(function () {
   $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
 
@@ -24,16 +25,20 @@ $(document).ready(function () {
 
   //creating a past/present/future for time
   function tracker() {
-    var current = moment().hour();
-
+    var hour = moment().hour();
+    console.log(hour);
     $(".row").each(function () {
-      var blockHour = parseInt($(this).attr("id").split("hour")[1]);
-      console.log(blockHour, current);
+      console.log($(this));
+
+      console.log($(this).data("hour"));
+      var blockHour = $(this).data("hour");
+      console.log(blockHour);
+      var blockHour = parseInt(blockHour);
 
       //past hours
-      if (blockHour < current) {
+      if (blockHour < hour) {
         $(this).addClass("past");
-      } else if (blockHour === current) {
+      } else if (blockHour === hour) {
         $(this).addClass("present");
       } else {
         $(this).addClass("future");
