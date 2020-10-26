@@ -4,7 +4,7 @@ $(document).ready(function () {
 
   //creating save button for calendar events
   $(".save").on("click", function () {
-    //console.log(content);
+    console.log(this);
     var text = $(this).siblings(".event").val();
     var time = $(this).parent().attr("id");
 
