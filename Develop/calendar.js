@@ -21,4 +21,9 @@ $(document).ready(function () {
   $("#3Pm .event").val(localStorage.getItem("3Pm"));
   $("#4Pm .event").val(localStorage.getItem("4Pm"));
   $("#5Pm .event").val(localStorage.getItem("5Pm"));
+
+  //creating a past/present/future for time
+  function tracker() {
+    var current = moment().hour();
+  }
 });
